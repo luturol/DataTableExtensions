@@ -7,22 +7,14 @@ using System.Threading.Tasks;
 
 namespace PocExentesions
 {
-    public class Person : ObjectMap<Person>
+    public class Person
     {
+        [Entity("Teste")]
         public string Name { get; private set; }
+
+        [Entity("Age")]
         public int Age { get; private set; }
 
-        public Person() { }
-
-        public Person(string name, int age)
-        {
-            this.Name = name;
-            this.Age = age;
-        }
-
-        public override Person Map(DataRow row)
-        {
-            return new Person(row["Name"].ToString(), int.Parse( row["Age"].ToString()));
-        }
+        public Person() { }        
     }
 }
