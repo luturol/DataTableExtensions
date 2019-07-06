@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PocExentesions\PocExentesions.csproj" />
+    <ProjectReference Include="..\DataTableExtensions\DataTableExtensions.csproj" />
   </ItemGroup>
 
 </Project>
